@@ -106,10 +106,8 @@
 
 ## 示例
 
-参考 [hosAgent](hosAgent/) 项目的 changelog 文件：
-- [v0.0.25](hosAgent/v0.0.25_2025-12-28.md) - 统一聊天接口、多模态支持
-- [v0.0.24](hosAgent/v0.0.24_2025-12-27.md) - 多模态支持、Markdown 渲染
-- [v0.0.22](hosAgent/v0.0.22_2025-12-26.md) - API Key 加密存储
+参考 [example](example/) 目录的示例文件：
+- [v0.0.1](example/v0.0.1_2025-01-01.md) - 标准 changelog 模板示例
 
 ## 版本划分建议
 
