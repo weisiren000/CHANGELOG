@@ -12,58 +12,29 @@
 
 ## Changelog 文件格式规范
 
+### 写法规范（用户视角）
+
+- 只描述用户可见的变化，不描述内部实现细节
+- 不暴露技术栈、架构设计、API 端点、文件路径
+- 不描述安全机制的实现细节
+- 不暴露数据库结构
+
 ### 模板
 
 ```markdown
 # 项目名 vX.Y.Z（YYYY-MM-DD）
 
-## 变更概览
-
-- 主要变更点 1：简短描述
-- 主要变更点 2：简短描述
-- 主要变更点 3：简短描述
-
-## 详情
-
-### Added
+## 新功能
 - 新增功能点 1
 - 新增功能点 2
 
-### Changed
-- 变更内容 1
-- 变更内容 2
+## 改进
+- 改进内容 1
+- 改进内容 2
 
-### Fixed
+## 问题修复
 - 修复问题 1
 - 修复问题 2
-
-### Removed
-- 移除内容 1
-
-### Security
-- 安全相关变更
-
-### Performance
-- 性能优化
-
-### Documentation
-- 文档更新
-
-### UX
-- 用户体验改进
-
-### Technical
-- 技术细节
-
-## 备注
-
-- 其他需要说明的事项
-- 包含的改进内容总结
-
-## Technical Details
-
-- Commit: `hash` - commit message (YYYY-MM-DD HH:MM)
-- Commit: `hash` - commit message (YYYY-MM-DD HH:MM)
 ```
 
 ### 规范说明
@@ -74,33 +45,13 @@
    - 日期为版本发布日期
 
 2. **章节结构**
-   - `变更概览`：3-5 个主要变更点的简要描述
-   - `详情`：按类型分类的详细变更列表
-   - `备注`：版本特别说明、注意事项等
-   - `Technical Details`：包含的 commit 记录
+   - `新功能`：新增的用户可见功能
+   - `改进`：现有功能的改进和优化
+   - `问题修复`：修复的问题
 
-3. **变更类型分类**
-   - `Added`：新增功能
-   - `Changed`：现有功能的变更
-   - `Deprecated`：即将废弃的功能
-   - `Removed`：已移除的功能
-   - `Fixed`：问题修复
-   - `Security`：安全相关变更
-   - `Performance`：性能优化
-   - `Documentation`：文档更新
-   - `UX`：用户体验改进
-   - `Technical`：技术实现细节
-
-4. **Technical Details 格式**
-   - 格式：`Commit: \`hash\` - commit message (YYYY-MM-DD HH:MM)`
-   - 包含该版本的所有相关 commit
-   - 按时间顺序排列
-   - 即使是私人仓库也记录 commit 信息，便于内部查阅
-
-5. **编写建议**
+3. **编写建议**
    - 使用清晰、简洁的语言描述变更
    - 重点突出用户可见的变更
-   - 技术细节放在 Technical Details 部分
    - 遵循中文技术文档写作规范
    - 保持版本间格式一致性
 
